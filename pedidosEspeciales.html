@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos Especiales</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100&family=Georama:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f5332b3830.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cesta.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="img/Panaderia.png" alt="imagenLogo" width="100px" height="100px"></a>
+        <div class="navegacion">
+            <a id="scale" href="index.html">Inicio</a>
+            <a id="scale" href="productos.html">Productos</a>
+            <a id="scale" href="pedidosEspeciales.html">Pedidos especiales</a>
+            <a href="#"><i id ="carrito" class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#"><i id="login" class="fa-solid fa-user"></i></a> 
+        </div>
+    </header>
+
+    <div class="cart-items-container">
+
+        <div id="cruz" class="fas fa-times"></div>
+        <h3 class="title">CESTA</h3>
+  
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img id="imgCarrito" src="img/pamerasChocolate.jpg" alt="pamerasChocolate">
+            <div class="content">
+                <h3>Palmeras Chocolate</h3>
+                <div class="price">0.79€</div>
+            </div>
+        </div>
+  
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="img/empanadaAtun.webp" alt="empanadaAtun">
+            <div class="content">
+                <h3>Empanada de atún</h3>
+                <div class="price">1,60€</div>
+            </div>
+        </div>
+  
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="img/CroissantGrandes.jpg" alt="Croissants Grandes">
+            <div class="content">
+                <h3>Croissants Grandes</h3>
+                <div class="price">1,40€</div>
+            </div>
+        </div>
+  
+        <a href="#" class="btn"> Comprar </a>
+  
+    </div>
+
+
+    <footer class="footer-distributed">
+        <script src="https://use.fontawesome.com/04abb44e62.js"></script>
+        <div class="footer-left">
+
+            <h3>Información</h3>
+
+            <p class="footer-links">
+                <a href="#" class="link-1">Quienes somos</a><br>
+                
+                <a href="privacidad.html">Politica de Privacidad</a><br>
+            
+                <a href="#">Politica de cookies</a><br>
+            
+                <a href="#">Condiciones legales</a><br>
+            </p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p>Calle Panadería Pedrín Nº 209</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>612345678</p>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-clock"></i>
+                <p>Horario de lunes a viernes de 8:00 a 21:00</p>
+    
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <h3>Redes sociales</h3>
+            </p>
+<br>
+            <div class="footer-icons">
+
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+
+            </div>
+
+        </div>
+        <script>
+            let cart = document.querySelector('.cart-items-container');
+
+            document.querySelector('#carrito').onclick = () =>{
+                cart.classList.add('active');
+            }
+
+            document.querySelector('#cruz').onclick = () =>{
+                cart.classList.remove('active');
+            }
+        </script>
+</footer>
+</body>
+</html>

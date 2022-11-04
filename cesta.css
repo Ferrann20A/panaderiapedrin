@@ -1,0 +1,79 @@
+.cart-items-container{
+    position: fixed;
+    top: -100px; right: -105%;
+    width: 25rem;
+    background: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    height: 120%;
+    z-index: 1200;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .cart-items-container.active{
+    right: 0;
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+  }
+
+  #imgCarrito{
+    height: 60px;
+  }
+  
+  .cart-items-container #cruz{
+    position: absolute;
+    top: 7rem;
+    right: 2.7rem;
+    font-size: 3rem;
+    cursor: pointer;
+    color: black;
+  }
+  
+  .cart-items-container #cruz:hover{
+    color: #d82929;
+  }
+  
+  .cart-items-container .title{
+    font-size: 2.5rem;
+    color: #e8bd91;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+  }
+  
+  .cart-items-container .cart-item{
+    position: relative;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .cart-items-container .cart-item .fa-times{
+    position: absolute;
+    top: 1rem; right: 1rem;
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .cart-items-container .cart-item .fa-times:hover{
+    color: rgb(223, 70, 70);
+  }
+  
+  .cart-items-container .cart-item img{
+    height: 7rem;
+  }
+  
+  .cart-items-container .cart-item .content h3{
+    font-size: 1.3rem;
+    color: black;
+    padding-bottom: .5rem;
+  }
+  
+  .cart-items-container .cart-item .content .price{
+    font-size: 1.2rem;
+    color:black;
+    text-align: left;
+  }
