@@ -11,6 +11,7 @@
     <script src="https://kit.fontawesome.com/f5332b3830.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="cesta.css">
+    <link rel="stylesheet" href="pedidosEspeciales.css">
 </head>
 <body>
     <header>
@@ -19,47 +20,52 @@
             <a id="scale" href="index.html">Inicio</a>
             <a id="scale" href="productos.html">Productos</a>
             <a id="scale" href="pedidosEspeciales.html">Pedidos especiales</a>
-            <a href="#"><i id ="carrito" class="fa-solid fa-cart-shopping"></i></a>
+            <a href="carrito.html"><i id ="carrito" class="fa-solid fa-cart-shopping"></i></a>
             <a href="#"><i id="login" class="fa-solid fa-user"></i></a> 
         </div>
     </header>
 
-    <div class="cart-items-container">
+    <br>
+    <br>
 
-        <div id="cruz" class="fas fa-times"></div>
-        <h3 class="title">CESTA</h3>
-  
-        <div class="cart-item">
-            <span class="fas fa-times"></span>
-            <img id="imgCarrito" src="img/pamerasChocolate.jpg" alt="pamerasChocolate">
-            <div class="content">
-                <h3>Palmeras Chocolate</h3>
-                <div class="price">0.79€</div>
+    <div class="container_form">
+        <form action="">
+            <fieldset>
+            <legend>PEDIDOS ESPECIALES</legend>
+            <div class="form-group">
+                <p><label for="descripcion">Descripción del producto:</label></p>
+                <textarea id="descripcion" name="descripcion" rows="6" cols="50"></textarea>
             </div>
-        </div>
-  
-        <div class="cart-item">
-            <span class="fas fa-times"></span>
-            <img src="img/empanadaAtun.webp" alt="empanadaAtun">
-            <div class="content">
-                <h3>Empanada de atún</h3>
-                <div class="price">1,60€</div>
+            <br>
+            <div class="form-group">
+                <label for="alergias">Alérgenos:</label>
+                <input type="text" name="alergias" id="alergias" size="45">
             </div>
-        </div>
-  
-        <div class="cart-item">
-            <span class="fas fa-times"></span>
-            <img src="img/CroissantGrandes.jpg" alt="Croissants Grandes">
-            <div class="content">
-                <h3>Croissants Grandes</h3>
-                <div class="price">1,40€</div>
+            <br>
+            <div class="form-group">
+                <label for="cantidad">Cantidad del producto:</label>
+                <input type="number" name="cantidad" id="cantidad" max="50" min="1">
             </div>
-        </div>
-  
-        <a href="#" class="btn"> Comprar </a>
-  
+            <br>
+            <div class="form-group">
+                <label for="fecha">Fecha de entrega:</label>
+                <input type="date" name="fecha" id="fecha">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="hora">Horario de entrega:</label>
+                <input type="time" name="hora" id="hora">
+            </div>
+            <br>
+            <div class="form-group">
+                <button class="añadir">Agregar</button>
+            </div>
+        </fieldset>
+        </form>
     </div>
 
+    <br>
+    <br>
 
     <footer class="footer-distributed">
         <script src="https://use.fontawesome.com/04abb44e62.js"></script>
@@ -70,9 +76,9 @@
             <p class="footer-links">
                 <a href="#" class="link-1">Quienes somos</a><br>
                 
-                <a href="privacidad.html">Politica de Privacidad</a><br>
+                <a href="privacidad.html">Política de Privacidad</a><br>
             
-                <a href="#">Politica de cookies</a><br>
+                <a href="#">Política de cookies</a><br>
             
                 <a href="#">Condiciones legales</a><br>
             </p>
@@ -113,17 +119,6 @@
             </div>
 
         </div>
-        <script>
-            let cart = document.querySelector('.cart-items-container');
-
-            document.querySelector('#carrito').onclick = () =>{
-                cart.classList.add('active');
-            }
-
-            document.querySelector('#cruz').onclick = () =>{
-                cart.classList.remove('active');
-            }
-        </script>
 </footer>
 </body>
 </html>

@@ -1,0 +1,31 @@
+.container_form{
+    display: flex;
+    justify-content: center;
+    font-family: Antonio;
+    font-size: 1.4rem;
+}
+
+.form-group{
+    margin: 0 0 0 1.5rem;
+}
+
+fieldset{
+    width: 35rem;
+    border-radius: 2rem;
+}
+
+legend{
+    font-weight: bold;
+}
+
+.añadir{
+    font-family: Antonio;
+    font-weight: bold;
+    border: none ;
+    background-color: orange;
+    color: white;
+    font-size: 2rem;
+    width: 35%;
+    border-radius: 10px;
+    cursor: pointer;
+}

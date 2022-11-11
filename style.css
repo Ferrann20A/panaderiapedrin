@@ -137,7 +137,6 @@ li{
     font-family: Antonio;
     font-size: 1.5rem;
     font-weight: bold;
-    /*margin-left: 3rem;*/
 }
 
 .separar{
@@ -158,19 +157,8 @@ footer{
     font-family: Antonio;
 }
 
-section {
-  width: 100%;
-  display: inline-block;
-  background: #333;
-  height: 50vh;
-  text-align: center;
-  font-size: 22px;
-  font-weight: 700;
-  text-decoration: underline;
-}
-
 .footer-distributed{
-	background: #666;
+	background: #253238;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
@@ -244,7 +232,7 @@ section {
 .footer-distributed .footer-center p{
 	display: inline-block;
 	color: #ffffff;
-  font-weight:400;
+    font-weight:400;
 	vertical-align: middle;
 	margin:0;
 }
@@ -332,7 +320,6 @@ height: 32.5rem;
   
 .card:hover {
 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-cursor: pointer;
 }
   
 .contenido {
@@ -371,7 +358,13 @@ b{
     width: 300px;
 }
 
-.productos1, .productos2, .productos3, .productos4, .productos5, .productos6, .productos7{
+.productos1, 
+.productos2, 
+.productos3, 
+.productos4, 
+.productos5, 
+.productos6, 
+.productos7{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -397,35 +390,4 @@ b{
 	vertical-align: top;
 }
 
-
-
-
-
-
-
-/*
-
-.card{
-    border: 1px solid;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-
-.lista-compra{
-    height: 100vh;
-    width: 15vw;
-    background-color: salmon;
-    display: none;
-}
-
-#carrito:focus + .lista-compra{
-    display: block;
-}
-
-*/
 

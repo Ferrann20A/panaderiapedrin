@@ -30,47 +30,95 @@ img{
 
 }
 
+#scale:hover{
+    font-weight: bold;
+}
+
 a{
     text-decoration: none;
     color: black;
     margin-left: 2rem;
 }
 
-#scale:hover{
+/****************************************/
+
+.contenedor_carrito{
+    font-family: Antonio;
+    margin-left: 3rem;
+}
+
+.art{
+    color: gray;
+}
+
+.container_productos{
+    border: 3px solid #be9d78;
+    /* height: 18rem; */
+    width:45%;
+    border-radius: 5px;
+    
+}
+
+.productos{
+    margin: 1rem 0 1.5rem 1rem;
+}
+
+#img-producto{
+    height: 8rem;
+    width: 10rem;
+	/* display: flex;
+	justify-content: flex-start;
+	align-self: flex-start; */
+}
+
+#cantidad{
+	width: 23px;
+	height: 23px;
+	margin-right: 1.5rem;
+	border: solid black 3px;
+	border-radius: 5px;
+}
+
+#trash{
+    background-color: white;
+    border: none; 
+    font-size: 1.5rem;
+    cursor: pointer;
+	margin:0 1rem 0 5rem;
+}
+
+.nombre{
     font-weight: bold;
+    font-size: 1.5rem;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
 }
 
-.container{
-    font-family: sans-serif;
-    margin-left: 25rem; 
-    margin-right: 25rem;
-    text-align: justify;
+.precio{
+	font-size: 2rem;
+	font-weight: bolder;
+	color: rgb(215, 51, 51);
 }
 
-.titulo{
-    text-decoration: underline;
+.prueba{
+	display: flex;
 }
 
+.cb{
+	clear: both;
+}
+
+/********* FOOTER **********/
 
 footer{
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #253238;
+    background-color: #06567b;
     color: white;
     text-align: center;
     font-family: Antonio;
-}
-
-section {
-  width: 100%;
-  display: inline-block;
-  background: #333;
-  height: 50vh;
-  text-align: center;
-  font-size: 22px;
-  font-weight: 700;
-  text-decoration: underline;
 }
 
 .footer-distributed{
@@ -91,21 +139,15 @@ section {
 	vertical-align: top;
 }
 
-/* Footer left */
-
 .footer-distributed .footer-left{
 	width: 40%;
 }
-
-/* The company logo */
 
 .footer-distributed h3{
 	color:  #ffffff;
 	font: normal 50px 'Antonio', cursive;
 	margin: 0;
 }
-
-/* Footer links */
 
 .footer-distributed .footer-links{
 	color:  #ffffff;
@@ -128,8 +170,6 @@ section {
 	font-weight: normal;
 	margin: 0;
 }
-
-/* Footer Center */
 
 .footer-distributed .footer-center{
 	width: 35%;
@@ -156,7 +196,7 @@ section {
 .footer-distributed .footer-center p{
 	display: inline-block;
 	color: #ffffff;
-  font-weight:400;
+    font-weight:400;
 	vertical-align: middle;
 	margin:0;
 }
@@ -186,13 +226,11 @@ section {
   content: none;
 }
 
-/* Footer Right */
-
 .footer-distributed .footer-right{
 	width: 20%;
 }
 
-.footer-distributed .footer-company-about{
+.footer-distributed .footer-redes{
 	line-height: 20px;
 	color:  #92999f;
 	font-size: 13px;
@@ -200,7 +238,7 @@ section {
 	margin: 0;
 }
 
-.footer-distributed .footer-company-about span{
+.footer-distributed .footer-redes {
 	display: block;
 	color:  #ffffff;
 	font-size: 14px;
