@@ -56,7 +56,7 @@
             </div>
         </div>
         <br>
-        <a href="#" class="btn">Comprar</a>
+        <a href="carrito.html" class="btn">Comprar</a>
     </div>
 
 
@@ -68,32 +68,31 @@
             <div class="productos">
                 <div class="nombre">
                     <p>
-                        Palemras Chocolate - 0,90 kg
+                        Palmeras Chocolate - 0,90 kg
                         <button id="trash"><i class="fa-regular fa-trash-can"></i></button>
                         <input type="number" name="cantidad" placeholder="1" id="cantidad" min="1" max="50">
                     </p>
                 </div>
-                <div class="precio">
-                    <p>2,28 €</p>
-                </div>
                 <div class="img_p">
                     <img id="img-producto" src="img/pamerasChocolate.jpg" alt="pamerasChocolate">
                 </div>
-                <div class="cb"></div>
+                <div class="precio">
+                    <p>2,28 €</p>
+                </div>
             </div>
         </div>
         <br>
         <div class="container_productos">
             <div class="productos">
-                <div class="img_p">
-                    <img id="img-producto" src="img/empanadaAtun.webp" alt="empanadaAtun">
-                </div>
                 <div class="nombre">
                     <p>
                         Empanada de Atún - 1,05 kg
                         <button id="trash"><i class="fa-regular fa-trash-can"></i></button>
                         <input type="number" name="cantidad" placeholder="1" id="cantidad" min="1" max="50">
                     </p>
+                </div>
+                <div class="img_p">
+                    <img id="img-producto" src="img/empanadaAtun.webp" alt="empanadaAtun">
                 </div>
                 <div class="precio">
                     <p>1,60 €</p>
@@ -103,15 +102,15 @@
         <br>
         <div class="container_productos">
             <div class="productos">
-                <div class="img_p">
-                    <img id="img-producto" src="img/croasan.jpg" alt="croasan">
-                </div>
                 <div class="nombre">
                     <p>
-                        Croissants - 0,85 kg
+                        Croissants normal - 0,85 kg
                         <button id="trash"><i class="fa-regular fa-trash-can"></i></button>
                         <input type="number" name="cantidad" placeholder="1" id="cantidad" min="1" max="50">
                     </p>
+                </div>
+                <div class="img_p">
+                    <img id="img-producto" src="img/croasan.jpg" alt="croasan">
                 </div>
                 <div class="precio">
                     <p>1,50 €</p>
@@ -175,17 +174,7 @@
             </div>
 
         </div>
-        <script>
-            let cart = document.querySelector('.cart-items-container');
-
-            document.querySelector('#carrito').onclick = () =>{
-                cart.classList.add('active');
-            }
-
-            document.querySelector('#cruz').onclick = () =>{
-                cart.classList.remove('active');
-            }
-        </script>
+        <script src="app.js"></script>
     </footer>
     
 </body>
